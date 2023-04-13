@@ -5,3 +5,63 @@
     Verde: #49a09d
     Lilás: #5f2c82
 */
+:root{
+    --verde: #49a09d;
+    --lilas: #5f2c82;
+}
+
+*{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: var(--lilas);
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+   position: relative;
+   height: 100vh;
+   width: 100vw;
+}
+
+section#login{
+    position: absolute; 
+    left: 50%; 
+    top: 50%;
+    transform:translate(-50%, -50%); 
+    overflow: hidden;
+
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+    
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem{
+    display: block;
+    height: 200px;
+    background: var(--lilas) url(../imagens/metal.jpg);
+    background-position: left bottom;
+    background-size: cover; 
+    
+}
+
+section#login > div#formulario{
+    padding: 10px;
+
+}
+
+div#formulario > h1{
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+}
